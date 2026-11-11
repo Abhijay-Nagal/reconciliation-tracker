@@ -47,4 +47,5 @@ jobs:
       - name: Run backend and dashboard tests
         run: python -m pytest tests --import-mode=importlib -q
       - name: Exercise the standalone CLI
-        run: python reconcile.py --database-url sqlite:///:memory:
+        run: >-
+          python reconcile.py --database-url sqlite:///:memory:
